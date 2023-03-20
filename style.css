@@ -1,0 +1,371 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	max-width: 100%;
+}
+html {
+	font-size: 10px;
+	color: #070707;
+}
+body {
+	background-color: #fff;
+	font-family: "Montserrat", sans-serif;
+	color: #070707;
+	font-size: 1.8rem;
+}
+.no-scroll {
+	overflow: hidden;
+}
+ul {
+	padding: 0;
+}
+h1,
+h2,
+h3 {
+	font-weight: bold;
+	margin: 0;
+}
+
+.wrapper {
+	width: 95rem;
+	margin: 0 auto;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+.header {
+	padding: 4.2rem 0;
+}
+.header__menu {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	justify-content: space-between;
+}
+.header__menu-link {
+	color: #828282;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: default;
+}
+.header__menu-link_selected {
+	color: #070707;
+}
+.header__menu-link:hover {
+	color: #070707;
+}
+.divider {
+	border: none;
+	border-bottom: 1px solid #828282;
+}
+.sub-header {
+	padding: 4rem 0 5rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.sub-header__name {
+	font-size: 4.8rem;
+}
+.sub-header__brief-info {
+	flex-grow: 0.15;
+}	
+.mobile-menu-button {
+	display: none;
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	font-size: 4rem;
+	right: 2rem;
+}
+.mobile-menu-button_active {
+	position: fixed;
+}
+.mobile-menu-button:active {
+	color: #828282;
+}
+
+.mobile-menu {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #fff;
+}
+.mobile-menu_active {
+	display: block;
+}
+.mobile-menu__menu-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	padding: 6.6rem 0 0 2.6rem;
+	justify-content: space-between;
+}
+.mobile-menu__menu-item {
+	margin-bottom: 6.8rem;
+}
+.mobile-menu__menu-link {
+	color: #828282;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: default;
+	font-size: 3.4rem;
+}
+.mobile-menu__menu-link_selected {
+	color: #070707;
+}
+.language {
+	list-style: none;
+	transform: rotate(90deg);
+	position: relative;
+	right: -2.9rem;
+	bottom: 2.9rem;
+}
+.language__item {
+	display: inline-block;
+}
+.language__button {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #828282;
+}
+.language__button:hover {
+	color: #070707;
+}
+.language__button_selected {
+	color: #070707;
+}
+.language__micro-divider {
+	color: #828282;
+	font-weight: bold;
+}
+.mobile-menu__language {
+	position: absolute;
+	margin: auto 2rem 2rem auto;
+	right: -6rem;
+	bottom: 6rem;
+}
+.main-photo {
+	padding-bottom: 10.5rem;
+}
+.info-about-me {
+	background-color: #f6f6f6;
+	padding: 12rem 2.5rem;
+}
+.info-about-me__title {
+	margin: 0 auto 1.8rem;
+	text-align: center;
+}
+.info-about-me__text {
+	width: 48.5rem;
+	margin: 0 auto;
+	text-align: center;
+}
+.skills {
+	padding: 9rem 0 11rem;
+}
+.skills__title {
+	margin-bottom: 7rem;
+	text-align: center;
+}
+.skills__text {
+	margin-bottom: 8.3rem;
+	text-align: center;
+}
+.skills__list {
+	display: flex;
+	justify-content: space-between;
+}
+.skills__item {
+	display: inline-block;
+	list-style: none;
+}
+.skills__item-image {
+	display: block;
+	margin: 0 auto 2.4rem;
+}
+.skills__item-title {
+	margin-bottom: 4rem;
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #828282;
+	text-align: center;
+}
+.rating {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.rating__star {
+	display: inline-block;
+	padding-right: 0.9rem;
+}
+.rating__star:last-child {
+	padding-right: 0;
+}
+.rating__star {
+	text-align: center;
+	font-style: normal;
+	font-family: FontAwesome;
+	color: #e5e5e5;
+}
+.rating__star_active {
+	color: #070707;
+}
+.portfolio {
+	background-color: #f6f6f6;
+	padding: 11.3rem 2.5rem 9.6rem;
+}
+.portfolio__title {
+	margin-bottom: 4.7rem;
+	font-size: 3.4rem;
+	text-align: center;
+}
+.portfolio__list {
+	list-style: none;
+}
+.portfolio__item {
+	margin-bottom: 10rem;
+}
+.portfolio__item:last-child {
+	margin-bottom: 0;
+}
+.portfolio__item-image {
+	display: block;
+	margin: 0 auto 4.5rem;
+}
+.portfolio__item-link {
+	display: block;
+	color: #070707;
+	text-align: center;
+}
+.contacts {
+	padding: 11.4rem 0 12.3rem;
+}
+.contacts__title {
+	font-size: 3.4rem;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.contacts__text {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+.contacts__send-button {
+	display: block;
+	margin: 0 auto 8.6rem;
+	border: none;
+	background-color: #070707;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Montserrat", sans-serif;
+	border-radius: 50vh;
+	color: #fff;
+	width: 18rem;
+	height: 4.2rem;
+	border: 0.2rem solid #070707;
+}
+.contacts__send-button:active {
+	background-color: #fff;
+	color: #070707;
+}
+.contacts__list {
+	list-style: none;
+	display: flex;
+	margin: 0 auto 4.5rem auto;
+	max-width: 35rem;
+	justify-content: space-between;
+}
+.contacts__item {
+	display: inline-block;
+}
+.contacts__item:last-child {
+	margin-right: 0;
+}
+.contacts__description {
+	font-size: 1.4rem;
+	text-align: center;
+	color: #828282;
+}
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+	.header,
+	.divider,
+	.language {
+		display: none;
+	}
+	.mobile-menu__language {
+		display: block;
+	}
+	.language__button {
+		font-size: 3.4rem;
+	}
+	.language__micro-divider {
+		font-size: 3.4rem;
+	}
+	.sub-header {
+		flex-direction: column;
+		align-items: flex-start;
+		padding-bottom: 3.7rem;
+	}
+	.sub-header__name {
+		margin-bottom: 2.3rem;
+	}
+	.mobile-menu-button {
+		display: block;
+	}
+	.main-photo {
+		content: url("img/main-photo-mobile.png");
+		display: block;
+		width: 100%;
+		padding-bottom: 8.5rem;
+	}
+	.info-about-me {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+	.skills {
+		padding-top: 8rem;
+		padding-bottom: 10rem;
+	}
+	.skills__title {
+		margin-bottom: 5rem;
+	}
+	.skills__list {
+		flex-direction: column;
+	}
+	.skills__item {
+		padding-bottom: 8rem;
+	}
+	.skills__item:last-child {
+		padding-bottom: 0;
+	}
+	.portfolio {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+	.contacts {
+		padding-top: 8rem;
+		padding-bottom: 9rem;
+	}
+	.contacts__send-button {
+		width: 35rem;
+	}
+	.contacts__description {
+		font-size: 1.8rem;
+	}
+}
+
+@media (max-width: 575.98px) {
+}
